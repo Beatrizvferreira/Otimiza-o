@@ -1,10 +1,11 @@
 import time
+import csv
 
 valores = [] #Matriz que armazenará os dados 
 soma = 0 #Caminho percorrido
 caminho =[] #Salvará as cidades visitadas
 
-with open("C:\Users\Beatriz\Desktop\GitHub\Otimização\26 cidades.txt",'r') as f:
+with open(r"C:\Users\Beatriz\Desktop\GitHub\Otimização\26 cidades.txt") as f:
     for line in f.readlines():
       vet = line.split('  ')
       results=[]
