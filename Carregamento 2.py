@@ -1,4 +1,4 @@
-#Algoritmo genético. 
+#Algoritmo genético 
 
 from random import random
 import time
@@ -165,12 +165,7 @@ class AlgoritmoGenetico():
 
     def visualiza_geracao(self): #Imprime todas as gerações
         melhor = self.populacao[0]
-        """
-        print("G:%s -> Valor: %s Espaço: %s Cromossomo: %s" % (self.populacao[0].geracao,
-                                                               melhor.nota_avaliacao,
-                                                               melhor.espaco_usado,
-                                                               melhor.cromossomo))
-    """
+        
 
     '''
     A função resolver() é a principal função do código, porque ela chama todos os outros métodos, 
@@ -181,9 +176,7 @@ class AlgoritmoGenetico():
     o terceiro é uma lista contendo os espaços que serão ocupados por cada produto individualmente,
     o quarto também é uma lista, mas este contém os valores de cada produto individualmente,
     por último é o limite de espaço que os produtos poderão ocupar.
-    '''
 
-    '''
     A primeira coisa a se fazer é inicializar a população,
     para isso tem-se que chamar a função inicializa_populacao(),
     depois avaliar, para isso tem-se que chamar a função avaliacao(), 
@@ -196,9 +189,7 @@ class AlgoritmoGenetico():
     2 pais serão escolhidos para fazer a reprodução de 2 novos filhos, 
     cada filho passará pelo processo de mutação, passar pelo processo de mutação, 
     não significa necessariamente que eles irão sofrer mutação, até porque isso depende da probabilidade preestabelecida.
-    '''
-
-    '''
+ 
     Depois que a nova população substituiu a anterior, é necessário fazer avaliação da população, 
     depois a ordenação, depois faz-se a visualização da geração. Repetindo o processo, 
     o melhor indivíduo estará no início da lista de indivíduos, então o método melhor_individuo() será chamado, 
@@ -260,9 +251,7 @@ logo em seguida é feita a conexão com o banco de dados, e as 3 informações d
 primeiro é o nome, segundo o espaço e por último o valor do produto. 
 A quantidade não é inserida na lista, ela é utilizada apenas para mostrar quantas vezes um produto será inserido na lista, 
 como todas as quantidades foram definidas como sendo 10, cada produto será inserido 10 vezes na lista, totalizando 250 produtos.
-'''
 
-'''
 No código abaixo, foram criadas 3 listas que irão armazenar os espaços ocupados pelos produtos, 
 os valores e os nomes, a variável limite armazena o limite de espaço que poderá ser ocupado pelos produtos selecionados, 
 somando todos os produtos, o espaço total ocupado é de: 163,23m^3, então o limite reduzirá este valor para 80m^3, 
